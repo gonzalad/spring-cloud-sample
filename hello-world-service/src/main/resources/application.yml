@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    config:
+      enabled: true
+      label: master
+      discovery:
+        enabled: true
+        serviceId: CONFIG-SERVER
+eureka:
+  instance:
+    host: ${host:127.0.0.1}
+    nonSecurePort: ${port:8080}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/    
+    healthcheck:
+      enabled: true
+    fetchRegistry: true
+---
+
+spring:
+  profiles: production
