@@ -1,0 +1,4 @@
+include 'common-service'
+include 'config-server'
+include 'discovery-service'
+include 'hello-world-service'
