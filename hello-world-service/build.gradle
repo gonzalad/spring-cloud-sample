@@ -3,11 +3,6 @@ jar {
 }
 
 dependencies {
-    compile("org.springframework.cloud:spring-cloud-starter-config")
-    compile("org.springframework.cloud:spring-cloud-starter-eureka")
-    compile("org.springframework.cloud:spring-cloud-config-server")
-    compile("org.springframework.boot:spring-boot-starter-web")
-    runtime("org.springframework.boot:spring-boot-starter-actuator")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    runtime("org.springframework.cloud:spring-cloud-starter-feign")
 }
 
